@@ -1,1 +1,1 @@
-$("#main").append("Good PineApple!!");
+$("#name").append("Good PineApple");

@@ -1,22 +1,30 @@
 <!--
-https://classroom.udacity.com/courses/ud804/lessons/1946788554/concepts/19265886770923
+https://classroom.udacity.com/courses/ud804/lessons/1946788554/concepts/19548385370923
 -->
 <!DOCTYPE html>
 <html>
 <head>
     <!-- This tells the browser how to read the document. -->
     <meta charset="utf-8">
-    <title>Resume</title>
-    <link href="css/style.css" rel="stylesheet">
     <!-- <script src="http://maps.googleapis.com/maps/api/js?libraries=places"></script> -->
     <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <title>Resume</title>
+
+    <!-- More on helper.js in the class -->
+    <script src="js/helper.js"></script>
+    <script src="js/resumeBuilder.js"></script>
+    <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
+    <div id="name"></div>
     <div id="main">
         <div id="header" class="center-content clear-fix">
             <ul id="topContacts" class="flex-box"></ul>
         </div>
+
         <div style="clear: both;"></div>
+
         <div id="workExperience" class="gray">
             <h2>Work Experience</h2>
         </div>
@@ -35,9 +43,6 @@ https://classroom.udacity.com/courses/ud804/lessons/1946788554/concepts/19265886
             </ul>
         </div>
     </div>
-    <!-- More on helper.js in the class -->
-    <script src="js/helper.js"></script>
-    <script src="js/resumeBuilder.js"></script>
     <script>
     if(document.getElementsByClassName('flex-item').length === 0) {
         document.getElementById('topContacts').style.display = 'none';
